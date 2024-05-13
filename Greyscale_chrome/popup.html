@@ -1,0 +1,74 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 300px;
+      font-family: Arial, sans-serif;
+      background: #e0e0e0;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .input-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+    .input-container input {
+      flex-grow: 1;
+      padding: 10px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 3px 3px 6px #bcbcbc, -3px -3px 6px #ffffff; /* Adjusted */
+      outline: none;
+      transition: all 0.2s ease-in-out;
+    }
+    .input-container button {
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 3px 3px 6px #bcbcbc, -3px -3px 6px #ffffff; /* Adjusted */
+      outline: none;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+    }
+    #siteList {
+      width: 100%;
+      padding: 0;
+      list-style-type: none;
+    }
+    .site {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      background: #e0e0e0;
+      box-shadow: 3px 3px 6px #bcbcbc, -3px -3px 6px #ffffff; /* Adjusted */
+    }
+    .delete {
+      cursor: pointer;
+      color: red;
+    }
+    .delete:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Greyscale Sites</h1>
+  <div class="input-container">
+    <input type="text" id="site" placeholder="Enter site URL">
+    <button id="add">Add</button>
+  </div>
+  <ul id="siteList"></ul>
+  <script src="popup.js"></script>
+</body>
+</html>
